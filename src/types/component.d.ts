@@ -9,7 +9,7 @@ import type XtxGuess from '@/components/XtxGuess.vue'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     //
-    XtxSwiper:typeof XtxSwiperVue
-    XtxGuess:typeof XtxGuess
+    XtxSwiper: typeof XtxSwiperVue
+    XtxGuess: typeof XtxGuess
   }
 }

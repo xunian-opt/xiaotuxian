@@ -24,7 +24,7 @@ const props = defineProps<{
     <swiper :circular="true" :autoplay="false" :interval="3000" @change="onchange">
       <swiper-item v-for="item in list" :key="item.id">
         <navigator url="/pages/index/index" hover-class="none" class="navigator">
-        <!-- 轮播图后端写法 -->
+          <!-- 轮播图后端写法 -->
           <image mode="aspectFill" class="image" :src="item.imgUrl"></image>
         </navigator>
       </swiper-item>

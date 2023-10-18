@@ -5,10 +5,8 @@ import { onLoad } from '@dcloudio/uni-app'
 import { ref } from 'vue'
 import type { BannerItem, CategoryItem, HotItem } from '@/types/home'
 import CustomNavbar from './components/CustomNavbar.vue'
-import CategoryPanel from "./components/CategoryPanel.vue"
+import CategoryPanel from './components/CategoryPanel.vue'
 import HotPanel from './components/HotPanel.vue'
-
-
 
 // 获取轮播图数据
 const bannerList = ref<BannerItem[]>([])
@@ -31,14 +29,11 @@ const getHotItemData = async () => {
   homehotList.value = res.result
 }
 
-
-
 // 生命周期函数,页面加载
 onLoad(() => {
   getHomeBannerData()
   getHomeCategoryData()
   getHotItemData()
-
 })
 </script>
 
@@ -61,7 +56,7 @@ onLoad(() => {
 <style lang="scss">
 //
 page {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   height: 100%;
   display: flex;
   flex-direction: column;

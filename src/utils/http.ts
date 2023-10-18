@@ -11,7 +11,7 @@
   4.添加 token 请求头标识
  */
 
-import { useMemberStore } from "@/stores"
+import { useMemberStore } from '@/stores'
 
 // 请求基地址
 const baseURL = 'https://pcapi-xiaotuxian-front-devtest.itheima.net'

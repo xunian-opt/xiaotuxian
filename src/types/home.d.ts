@@ -10,7 +10,6 @@ export type BannerItem = {
   type: number
 }
 
-
 /** 首页-前台类目数据类型 */
 export type CategoryItem = {
   /** 图标路径 */
@@ -39,6 +38,7 @@ export type HotItem = {
 
 /** 猜你喜欢-商品类型 */
 export type GuessItem = {
+  value: import('h:/git-system/xiaotuxian/src/types/global').PageResult<GuessItem>
   /** 商品描述 */
   desc: string
   /** 商品折扣 */
